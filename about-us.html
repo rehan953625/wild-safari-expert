@@ -8,61 +8,99 @@
   <meta name="keywords" content="About Wild Safari, Rahino Uttarakhand, Jim Corbett Private Tour Operator, Ramnagar Travel Desk, Private Resort Stay Coordination, Uttarakhand Travel Agency">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wildsafariexpert.online/about-us.html">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://wildsafariexpert.online/sitemap.xml">
   <meta name="theme-color" content="#173d2b">
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/zone/favicon.svg">
+
+  <!-- Unified Global Stylesheet (Keeps Header & Footer 100% Identical to index.html) -->
+  <link rel="stylesheet" href="assets/style.css?v=2">
+
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="About Us | Wild Safari (Operated by Rahino) | Private Travel Desk">
   <meta property="og:description" content="Verified business details, GST registration (Rahino - 05FIKPR6535Q1ZB), physical office address in Uttarakhand, and transparent private travel coordination for Jim Corbett visitors.">
   <meta property="og:url" content="https://wildsafariexpert.online/about-us.html">
-  <meta property="og:image" content="https://wildsafariexpert.online/assets/animation/royal-bengal-tiger.webp">
+  <meta property="og:image" content="https://wildsafariexpert.online/assets/images/royal_bengal_tiger_closeup.webp">
+  <meta property="og:locale" content="en_IN">
 
   <!-- Structured Data (Schema.org TravelAgency) for Google Ads & Search Verification -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Wild Safari (Operated by Rahino)",
-    "legalName": "Rahino",
-    "alternateName": "Wild Safari",
-    "url": "https://wildsafariexpert.online/about-us.html",
-    "telephone": "+91-7457046323",
-    "email": "info@wildsafariexpert.online",
-    "taxID": "05FIKPR6535Q1ZB",
-    "founder": {
-      "@type": "Person",
-      "name": "Mohd Rehan"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://wildsafariexpert.online/#travelagency",
+      "name": "Wild Safari (Operated by Rahino)",
+      "legalName": "Rahino",
+      "alternateName": "Wild Safari",
+      "taxID": "05FIKPR6535Q1ZB",
+      "description": "Private tour and travel operator (operated by Rahino, GSTIN: 05FIKPR6535Q1ZB) providing private resort stays, local transport coordination, and travel planning assistance near Jim Corbett, Uttarakhand. Not affiliated with any government forest department.",
+      "url": "https://wildsafariexpert.online/about-us.html",
+      "telephone": "+91-7457046323",
+      "email": "info@wildsafariexpert.online",
+      "founder": {
+        "@type": "Person",
+        "name": "Mohd Rehan"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "H.No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Kashipur",
+        "addressLocality": "Udham Singh Nagar",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "244713",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Jim Corbett National Park"
+        },
+        {
+          "@type": "City",
+          "name": "Ramnagar"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Uttarakhand"
+        }
+      ]
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "H.No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Kashipur",
-      "addressLocality": "Udham Singh Nagar",
-      "addressRegion": "Uttarakhand",
-      "postalCode": "244713",
-      "addressCountry": "IN"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    },
-    "description": "Private tour and travel operator (operated by Rahino, GSTIN: 05FIKPR6535Q1ZB) providing private resort stays, local transport coordination, and travel planning assistance near Jim Corbett, Uttarakhand. Not affiliated with any government forest department."
-  }
+    {
+      "@type": "AboutPage",
+      "@id": "https://wildsafariexpert.online/about-us.html#webpage",
+      "url": "https://wildsafariexpert.online/about-us.html",
+      "name": "About Us | Wild Safari (Operated by Rahino)",
+      "about": {
+        "@id": "https://wildsafariexpert.online/#travelagency"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
+}
   </script>
 
+  <!-- Page Body Styles Only (Header & Footer untouched so they match index.html 100%) -->
   <style>
     :root {
       --ws-forest-dark: #132a1f;
       --ws-forest-mid: #1e4631;
-      --ws-forest-light: #2d6a4f;
       --ws-amber: #d97706;
       --ws-amber-soft: #fef3c7;
       --ws-sage-bg: #f4f7f4;
@@ -84,10 +122,6 @@
       overflow-x: hidden;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      color: var(--ws-text-main);
-      background-color: var(--ws-white);
-      line-height: 1.6;
       -webkit-text-size-adjust: 100%;
     }
 
@@ -100,181 +134,16 @@
       word-wrap: break-word;
     }
 
-    a {
-      color: var(--ws-forest-mid);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    a:hover {
-      color: var(--ws-amber);
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-
-    /* Prominent Above-the-Fold Official Disclosure Banner */
-    .compliance-banner {
-      background: #fffbeb;
-      border-bottom: 1px solid #fde68a;
-      color: #78350f;
-      font-size: 0.84rem;
-      line-height: 1.45;
-      padding: 0.55rem 1rem;
-      text-align: center;
-    }
-    .compliance-banner strong {
-      color: #92400e;
-    }
-
-    /* Topbar */
-    .topbar {
-      background: var(--ws-forest-dark);
-      color: #e5e7eb;
-      font-size: 0.85rem;
-      padding: 0.5rem 0;
-    }
-    .topbar-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-    }
-    .topbar-entity {
-      color: var(--ws-amber-soft);
-      font-weight: 600;
-      font-size: 0.82rem;
-    }
-    .topbar-links {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1.15rem;
-    }
-    .topbar-links a {
-      color: #f3f4f6;
-      font-weight: 500;
-    }
-    .topbar-links a:hover {
-      color: var(--ws-amber-soft);
-    }
-
-    /* Site Header & Navigation */
-    .site-header {
-      background: var(--ws-white);
-      border-bottom: 1px solid var(--ws-border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 10px rgba(19, 42, 31, 0.05);
-    }
-    .nav-wrap {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0.85rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .brand {
-      display: inline-flex;
-      flex-direction: column;
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--ws-forest-dark);
-      line-height: 1.15;
-    }
-    .brand small {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      color: var(--ws-forest-mid);
-      margin-top: 2px;
-      text-transform: uppercase;
-    }
-    .menu-toggle {
-      display: none;
-      background: var(--ws-sage-bg);
-      border: 1px solid var(--ws-border);
-      color: var(--ws-forest-dark);
-      border-radius: 8px;
-      padding: 0.45rem 0.75rem;
-      font-size: 1.15rem;
-      cursor: pointer;
-    }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.35rem;
-    }
-    .nav-links a {
-      padding: 0.45rem 0.75rem;
-      border-radius: 8px;
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--ws-text-main);
-    }
-    .nav-links a:hover,
-    .nav-links a.active {
-      background: var(--ws-sage-bg);
-      color: var(--ws-forest-mid);
-    }
-
-    /* Page Hero */
-    .page-hero {
-      background-color: var(--ws-forest-dark);
-      background-image: linear-gradient(90deg, rgba(8, 30, 18, 0.92), rgba(19, 42, 31, 0.75)), url('https://wildsafariexpert.online/assets/animation/corbett-park-view.webp');
-      background-size: cover;
-      background-position: center;
-      color: var(--ws-white);
-      padding: 4rem 0;
-    }
-    .page-hero .eyebrow {
-      display: inline-block;
-      background: rgba(254, 243, 199, 0.16);
-      border: 1px solid rgba(254, 243, 199, 0.35);
-      color: var(--ws-amber-soft);
-      padding: 0.35rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 0.85rem;
-    }
-    .page-hero h1 {
-      font-size: clamp(1.8rem, 4vw, 2.65rem);
-      margin: 0 0 0.75rem 0;
-      line-height: 1.2;
-      color: var(--ws-white);
-    }
-    .page-hero p {
-      font-size: 1.05rem;
-      max-width: 760px;
-      margin: 0;
-      color: #e5e7eb;
-      line-height: 1.65;
-    }
-
     /* Section & Heading Polish */
     .section {
-      padding: 4.25rem 0;
+      padding: 4.5rem 0;
     }
     .section.alt {
       background: linear-gradient(180deg, var(--ws-sage-bg) 0%, #ebf1ec 100%);
     }
     .section-head {
       max-width: 780px;
-      margin: 0 auto 2.75rem auto;
+      margin: 0 auto 3rem auto;
       text-align: center;
       padding: 0 0.5rem;
     }
@@ -292,65 +161,19 @@
       margin-bottom: 0.75rem;
       max-width: 100%;
     }
-    .section-head h2,
-    .intro-copy h2 {
-      margin: 0 0 0.75rem 0;
-      color: var(--ws-forest-dark);
-      font-size: clamp(1.45rem, 3vw, 2.05rem);
-      line-height: 1.25;
-    }
-    .section-head p {
-      margin: 0;
-      color: var(--ws-text-muted);
-      font-size: 1rem;
-    }
 
-    /* Intro Grid */
-    .intro-grid {
-      display: grid;
-      grid-template-columns: 5fr 7fr;
-      gap: 2.5rem;
-      align-items: center;
-    }
-    .intro-image {
-      min-height: 390px;
-      border-radius: 18px;
-      background-color: var(--ws-forest-mid);
-      background-image: linear-gradient(180deg, rgba(19, 42, 31, 0.15), rgba(19, 42, 31, 0.55)), url('https://wildsafariexpert.online/assets/animation/royal-bengal-tiger.webp');
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 14px 30px rgba(19, 42, 31, 0.12);
-      border: 1px solid var(--ws-border);
-    }
-    .intro-copy p {
-      color: var(--ws-text-muted);
-      margin: 0 0 1rem 0;
-      font-size: 0.97rem;
-      line-height: 1.7;
-    }
-    .info-boxes {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 1.35rem;
-    }
-    .info-box {
-      background: var(--ws-sage-bg);
-      border: 1px solid var(--ws-border);
-      border-radius: 12px;
-      padding: 1.1rem;
-    }
-    .info-box strong {
-      display: block;
-      color: var(--ws-forest-dark);
-      font-size: 0.95rem;
-      margin-bottom: 0.35rem;
-    }
-    .info-box span {
-      display: block;
-      color: var(--ws-text-muted);
-      font-size: 0.87rem;
-      line-height: 1.55;
+    /* Hero Non-Affiliation Pill inside Page Hero */
+    .hero-disclosure-pill {
+      margin-top: 1.15rem;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.42);
+      border: 1px solid rgba(240, 199, 111, 0.45);
+      color: #fef3c7;
+      padding: 0.55rem 0.95rem;
+      border-radius: 10px;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      max-width: 760px;
     }
 
     /* Verified Business Identity & Legal Registration Section */
@@ -360,7 +183,7 @@
       border-radius: 18px;
       padding: 2rem;
       box-shadow: 0 12px 28px rgba(19, 42, 31, 0.07);
-      margin-top: 2.5rem;
+      margin-top: 2.75rem;
     }
     .identity-header {
       display: flex;
@@ -416,19 +239,23 @@
       color: var(--ws-text-main);
       line-height: 1.45;
     }
+    .identity-item .value a {
+      color: var(--ws-forest-mid);
+      text-decoration: underline;
+    }
 
     /* Transparency & Scope Comparison Box */
     .scope-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 1.75rem;
     }
     .scope-box {
       background: var(--ws-white);
       border: 1px solid var(--ws-border);
       border-radius: 16px;
-      padding: 1.6rem;
+      padding: 1.55rem;
       box-shadow: 0 6px 18px rgba(19, 42, 31, 0.04);
     }
     .scope-box.positive {
@@ -475,8 +302,7 @@
       box-shadow: 0 16px 30px -8px rgba(19, 42, 31, 0.13);
     }
     .card-image {
-      height: 210px;
-      background-color: var(--ws-forest-mid);
+      height: 220px;
       background-size: cover;
       background-position: center;
       position: relative;
@@ -507,13 +333,13 @@
       margin-top: 0;
       margin-bottom: 0.65rem;
       color: var(--ws-forest-dark);
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
     .card-body p {
       margin: 0;
       color: var(--ws-text-muted);
       line-height: 1.65;
-      font-size: 0.93rem;
+      font-size: 0.94rem;
     }
 
     /* Local Commitment Showcase Box */
@@ -561,185 +387,39 @@
       line-height: 1.5;
     }
 
-    /* Enquiry Section */
-    .enquiry {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 3rem 1.25rem;
-    }
-    .form-wrap {
-      background: var(--ws-white);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 12px 30px rgba(19, 42, 31, 0.08);
-      border: 1px solid var(--ws-border);
-      min-width: 0;
-    }
-    .form-title h2 {
-      margin: 0 0 0.35rem 0;
-      color: var(--ws-forest-dark);
-      font-size: 1.45rem;
-    }
-    .form-subtitle {
-      color: var(--ws-text-muted);
-      font-size: 0.93rem;
-      margin-bottom: 1.25rem;
-    }
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-      gap: 0.85rem;
-      align-items: center;
-    }
-    .form-grid > * {
-      min-width: 0 !important;
-      max-width: 100% !important;
-    }
-    .form-grid input,
-    .form-grid select {
-      width: 100%;
-      padding: 0.78rem 0.9rem;
-      border: 1px solid var(--ws-border);
-      border-radius: 10px;
-      font-size: 0.92rem;
-      color: var(--ws-text-main);
-      background: var(--ws-cream-bg);
-    }
-    .form-grid input:focus,
-    .form-grid select:focus {
-      outline: 2px solid var(--ws-forest-mid);
-      background: var(--ws-white);
-    }
-    .btn {
-      background: var(--ws-forest-mid);
-      color: var(--ws-white);
-      border: none;
-      border-radius: 10px;
-      padding: 0.82rem 1.25rem;
-      font-size: 0.95rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }
-    .btn:hover {
-      background: var(--ws-forest-dark);
-    }
+    /* Consent Row inside Dark Green Enquiry Bar */
     .consent-row {
       margin-top: 0.85rem;
       display: flex;
       align-items: flex-start;
       gap: 0.55rem;
-      font-size: 0.83rem;
-      color: var(--ws-text-muted);
+      font-size: 0.8rem;
+      color: #d7e3da;
+      line-height: 1.45;
     }
     .consent-row input[type="checkbox"] {
       margin-top: 0.22rem;
       flex-shrink: 0;
+      width: 16px !important;
+      height: 16px !important;
+      min-height: 16px !important;
     }
-    .form-feedback {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--ws-forest-mid);
-    }
-    .form-note {
-      margin: 0.5rem 0 0 0;
-      font-size: 0.8rem;
-      color: var(--ws-text-muted);
-    }
-
-    /* Footer */
-    .site-footer {
-      background: var(--ws-forest-dark);
-      color: #d1d5db;
-      padding: 3.5rem 0 1.75rem 0;
-      font-size: 0.9rem;
-    }
-    .footer-grid {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 1.25rem 2.25rem 1.25rem;
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
-      gap: 2rem;
-    }
-    .site-footer h3 {
-      color: var(--ws-white);
-      font-size: 1.05rem;
-      margin: 0 0 0.85rem 0;
-    }
-    .site-footer ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .site-footer li {
-      margin-bottom: 0.45rem;
-    }
-    .site-footer a {
-      color: #d1d5db;
-    }
-    .site-footer a:hover {
-      color: var(--ws-amber-soft);
-    }
-    .footer-disclosure {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 1.25rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-      font-size: 0.84rem;
-      color: #e5e7eb;
-      background: rgba(0, 0, 0, 0.18);
-      border-radius: 10px;
-    }
-    .footer-bottom {
-      max-width: 1180px;
-      margin: 1.25rem auto 0 auto;
-      padding: 0 1.25rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      font-size: 0.82rem;
-      color: #9ca3af;
+    .consent-row a {
+      color: #f0c76f;
+      text-decoration: underline;
     }
 
     /* ====================================================================
        STRICT MOBILE-FRIENDLY RULES (250px to 768px — Zero Overflow)
        ==================================================================== */
     @media screen and (max-width: 768px) {
-      .container,
-      .topbar-inner,
-      .nav-wrap,
-      .footer-grid,
-      .footer-disclosure,
-      .footer-bottom {
+      .container {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
         padding-left: 12px !important;
         padding-right: 12px !important;
         box-sizing: border-box !important;
-      }
-
-      .menu-toggle {
-        display: inline-block !important;
-      }
-      .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 0.5rem;
-        border-top: 1px solid var(--ws-border);
-      }
-      .nav-links.open {
-        display: flex !important;
-      }
-      .nav-links a {
-        width: 100%;
       }
 
       .section {
@@ -785,32 +465,34 @@
         white-space: normal !important;
       }
 
-      .enquiry {
-        padding: 1.25rem 12px !important;
-      }
-      .form-wrap,
-      .identity-card {
-        padding: 1.15rem 0.95rem !important;
-        width: 100% !important;
-      }
-      .form-grid,
       .intro-grid,
       .info-boxes,
       .identity-grid,
       .scope-grid,
       .cards,
-      .commitment-grid,
-      .footer-grid {
+      .commitment-grid {
         display: grid !important;
         grid-template-columns: minmax(0, 1fr) !important;
-        gap: 1rem !important;
+        gap: 1.1rem !important;
+        width: 100% !important;
+      }
+
+      .intro-grid > *,
+      .info-boxes > *,
+      .identity-grid > *,
+      .scope-grid > *,
+      .cards > *,
+      .commitment-grid > * {
+        min-width: 0 !important;
+        max-width: 100% !important;
         width: 100% !important;
       }
 
       .intro-image {
-        min-height: 200px !important;
-        height: 200px !important;
+        min-height: 185px !important;
+        height: 185px !important;
         border-radius: 12px !important;
+        margin-bottom: 0.25rem !important;
       }
 
       .card-image {
@@ -819,58 +501,36 @@
 
       .card-body,
       .info-box,
+      .identity-card,
+      .scope-box,
       .commitment-showcase,
-      .commitment-item,
-      .scope-box {
+      .commitment-item {
         padding: 1rem 0.9rem !important;
       }
-    }
 
-    @media screen and (max-width: 480px) {
-      .topbar-inner,
-      .topbar-links {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        gap: 4px !important;
+      .card-body h3,
+      .identity-header h3,
+      .scope-box h3,
+      .commitment-showcase h3 {
+        font-size: clamp(1rem, 4.5vw, 1.15rem) !important;
       }
-      .site-header .nav-wrap {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        padding-top: 8px !important;
-        padding-bottom: 8px !important;
-        gap: 6px !important;
-      }
-      .site-header .brand {
-        font-size: clamp(0.98rem, 5vw, 1.2rem) !important;
-        line-height: 1.15 !important;
-        max-width: calc(100% - 52px) !important;
-      }
-      .footer-bottom {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 6px !important;
-        text-align: center !important;
+
+      .intro-copy p,
+      .card-body p,
+      .commitment-showcase > p {
+        font-size: clamp(0.82rem, 3.5vw, 0.92rem) !important;
+        line-height: 1.55 !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Above-the-fold Independent Agency & Non-Affiliation Disclosure for Google Ads Compliance -->
-  <div class="compliance-banner" role="region" aria-label="Independent Business Disclosure">
-    <strong>Official Disclosure:</strong> Wild Safari (<strong>wildsafariexpert.online</strong>) is a private travel & tour coordination agency operated by Rahino (GSTIN: 05FIKPR6535Q1ZB). We are NOT affiliated with the Uttarakhand Forest Department or the official Corbett Tiger Reserve portal.
-  </div>
-
+  <!-- ====================================================================
+       GLOBAL TOPBAR (100% Identical to index.html)
+       ==================================================================== -->
   <div class="topbar" id="top">
     <div class="topbar-inner">
-      <div class="topbar-entity">
-        Regd. Entity: Rahino (Prop. Mohd Rehan) • GSTIN: 05FIKPR6535Q1ZB
-      </div>
       <div class="topbar-links">
         <a href="tel:+917457046323">☎ +91-7457046323</a>
         <a href="mailto:info@wildsafariexpert.online">✉ info@wildsafariexpert.online</a>
@@ -878,38 +538,50 @@
     </div>
   </div>
 
+  <!-- ====================================================================
+       GLOBAL HEADER & NAVIGATION (100% Identical to index.html)
+       ==================================================================== -->
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="https://wildsafariexpert.online/index.html">
+      <a class="brand" href="https://wildsafariexpert.online">
         Wild Safari
-        <small>A Travel Unit of Rahino • Uttarakhand</small>
+        <small>EXPLORE IN NATURE’S LAP</small>
       </a>
-      <button class="menu-toggle" id="menuToggleBtn" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="nav-links" id="mainNav" aria-label="Main Navigation">
-        <a href="https://wildsafariexpert.online/index.html">Home</a>
-        <a href="https://wildsafariexpert.online/jeep-safari.html">Jeep Safari Packages</a>
-        <a href="https://wildsafariexpert.online/canter-safari.html">Canter Tour Info</a>
-        <a href="https://wildsafariexpert.online/dhikala-night-stay.html">Dhikala Tour Packages</a>
-        <a href="https://wildsafariexpert.online/resort-stay.html">Resort Stay</a>
-        <a class="active" href="https://wildsafariexpert.online/about-us.html">About Us</a>
-        <a href="https://wildsafariexpert.online/about-jim-corbett.html">Corbett Travel Guide</a>
-        <a href="https://wildsafariexpert.online/contact.html">Contact Us</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="https://wildsafariexpert.online">Home</a>
+        <a href="jeep-safari.html">Jeep Safari</a>
+        <a href="canter-safari.html">Canter Safari</a>
+        <a href="dhikala-night-stay.html">Dhikala Night Stay</a>
+        <a href="resort-stay.html">Resort Stay</a>
+        <a class="active" href="about-us.html">About Us</a>
+        <a href="about-jim-corbett.html">About Corbett</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="page-hero">
+  <!-- ====================================================================
+       GOOGLE ADS COMPLIANT PAGE HERO
+       ==================================================================== -->
+  <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(8, 30, 18, 0.88), rgba(8, 30, 18, 0.5)), url('assets/animation/corbett-park-view.webp');">
     <div class="container">
       <span class="eyebrow">Operated by Rahino (GSTIN: 05FIKPR6535Q1ZB) • Private Tour Operator</span>
       <h1>About Wild Safari (Rahino)</h1>
       <p>A local private tour and travel assistance desk based in the foothills of Uttarakhand, dedicated to helping families, wildlife photographers, and travellers with private resort bookings, 4x4 vehicle transfers, and honest Jim Corbett itinerary coordination.</p>
+      <div class="hero-disclosure-pill">
+        <strong>Official Disclosure:</strong> Wild Safari (<strong>wildsafariexpert.online</strong>) is a private travel &amp; tour coordination agency operated by <strong>Rahino (GSTIN: 05FIKPR6535Q1ZB)</strong>. We are <strong>NOT</strong> affiliated with the Uttarakhand Forest Department or the official Corbett Tiger Reserve portal.
+      </div>
     </div>
   </section>
 
+  <!-- ====================================================================
+       WHO WE ARE + VERIFIED BUSINESS IDENTITY & SCOPE (GOOGLE ADS COMPLIANT)
+       ==================================================================== -->
   <section class="section">
     <div class="container">
       <div class="intro-grid">
-        <div class="intro-image" role="img" aria-label="Wild Safari private travel assistance in Jim Corbett foothills"></div>
+        <div class="intro-image" style="background-image:url('assets/animation/royal-bengal-tiger.webp')" role="img" aria-label="Wild Safari private travel assistance in Jim Corbett foothills"></div>
         <div class="intro-copy">
           <span class="eyebrow">Who We Are</span>
           <h2>Your Local Private Travel Operator in the Corbett Foothills</h2>
@@ -1000,6 +672,9 @@
     </div>
   </section>
 
+  <!-- ====================================================================
+       HOW OUR PRIVATE TRAVEL DESK ASSISTS YOU + 4-POINT SERVICE PROMISE
+       ==================================================================== -->
   <section class="section alt">
     <div class="container">
       <div class="section-head">
@@ -1010,7 +685,7 @@
 
       <div class="cards">
         <article class="card">
-          <div class="card-image" style="background-image:linear-gradient(180deg, rgba(19,42,31,0.1), rgba(19,42,31,0.5)), url('https://wildsafariexpert.online/assets/animation/corbett-jeep-safari.webp')">
+          <div class="card-image" style="background-image:url('assets/animation/corbett-jeep-safari.webp')">
             <span class="card-tag">Doorstep Vehicle Support</span>
           </div>
           <div class="card-body">
@@ -1020,7 +695,7 @@
         </article>
 
         <article class="card">
-          <div class="card-image" style="background-image:linear-gradient(180deg, rgba(19,42,31,0.1), rgba(19,42,31,0.5)), url('https://wildsafariexpert.online/assets/dhikala-zone/dhikala-rest-house.webp')">
+          <div class="card-image" style="background-image:url('assets/dhikala-zone/dhikala-rest-house.webp')">
             <span class="card-tag">Itinerary &amp; Route Guidance</span>
           </div>
           <div class="card-body">
@@ -1030,7 +705,7 @@
         </article>
 
         <article class="card">
-          <div class="card-image" style="background-image:linear-gradient(180deg, rgba(19,42,31,0.1), rgba(19,42,31,0.5)), url('https://wildsafariexpert.online/assets/animation/corbett-park-view.webp')">
+          <div class="card-image" style="background-image:url('assets/animation/corbett-park-view.webp')">
             <span class="card-tag">Verified Partner Stays</span>
           </div>
           <div class="card-body">
@@ -1065,17 +740,20 @@
     </div>
   </section>
 
+  <!-- ====================================================================
+       ENQUIRY BAR AT BOTTOM (Above Footer, With Consent Checkbox)
+       ==================================================================== -->
   <div id="enquiry">
     <section class="enquiry" aria-label="Quick Travel Consultation">
       <div class="form-wrap">
         <div class="form-title">
           <div>
-            <h2>Request a Private Travel &amp; Resort Quote</h2>
+            <h2>Plan Your Corbett Trip with Our Local Desk</h2>
             <div class="form-subtitle">Looking for advice on riverside resorts, private 4x4 vehicle hire, or seasonal trip planning near Ramnagar? Share your details below to connect with our local desk at <strong>Rahino</strong>.</div>
           </div>
         </div>
 
-        <form class="form-grid" id="enquiryForm" data-enquiry-form>
+        <form class="form-grid" data-enquiry-form>
           <input name="name" placeholder="Your full name" aria-label="Your full name" required>
           <input name="phone" placeholder="Mobile / WhatsApp number" aria-label="Mobile number" type="tel" required>
           <input name="email" placeholder="Email address" aria-label="Email address" type="email" required>
@@ -1086,112 +764,86 @@
             <option value="Multi-Day Foothills Tour Consultation">Multi-Day Foothills Tour Consultation</option>
             <option value="Resort & Family Cottage Booking">Resort &amp; Family Cottage Booking</option>
           </select>
-          <button class="btn" type="submit">Request Callback</button>
+          <button class="btn" type="submit">Send Enquiry</button>
         </form>
 
         <label class="consent-row" for="consentCheck">
           <input type="checkbox" id="consentCheck" name="consent" required checked>
-          <span>I agree to the <a href="https://wildsafariexpert.online/privacy-policy.html" style="text-decoration:underline">Privacy Policy</a> and <a href="https://wildsafariexpert.online/terms-and-conditions.html" style="text-decoration:underline">Terms &amp; Conditions</a>, and consent to be contacted by <strong>Rahino (Wild Safari)</strong> via phone, WhatsApp, or email regarding my travel enquiry.</span>
+          <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>, and consent to be contacted by <strong>Rahino (Wild Safari)</strong> regarding my travel enquiry.</span>
         </label>
 
-        <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
-        <p class="form-note">We respect your privacy and never share your contact details with unauthorized third parties.</p>
+        <div class="form-feedback" role="status" aria-live="polite"></div>
+        <p class="form-note">Your enquiry is sent directly to our local travel team. See our <a href="privacy-policy.html" style="color:#f0c76f;text-decoration:underline">Privacy Policy</a>.</p>
       </div>
     </section>
   </div>
 
+  <!-- ====================================================================
+       GLOBAL FOOTER (100% Identical to index.html)
+       ==================================================================== -->
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <a class="brand" style="color:white" href="https://wildsafariexpert.online/index.html">
+        <a class="brand" style="color:white" href="https://wildsafariexpert.online">
           Wild Safari
-          <small style="color:#fef3c7">A TRAVEL UNIT OF RAHINO</small>
+          <small>EXPLORE IN NATURE’S LAP</small>
         </a>
-        <p>Private travel and tour operator (operated by <strong>Rahino</strong>, GSTIN: <strong>05FIKPR6535Q1ZB</strong>) assisting visitors with private resort stays, local transport coordination, and Jim Corbett trip planning.</p>
+        <p>Private travel and tour operator assisting visitors with Jim Corbett trip planning, local transport coordination, and nearby resort accommodation enquiries.</p>
       </div>
 
       <div>
-        <h3>Tour Packages &amp; Stays</h3>
+        <h3>Explore Safaris &amp; Stays</h3>
         <ul>
-          <li><a href="https://wildsafariexpert.online/jeep-safari.html">Jeep Safari Packages</a></li>
-          <li><a href="https://wildsafariexpert.online/canter-safari.html">Canter Tour Info</a></li>
-          <li><a href="https://wildsafariexpert.online/dhikala-night-stay.html">Dhikala Tour Packages</a></li>
-          <li><a href="https://wildsafariexpert.online/resort-stay.html">Resort Stay</a></li>
-          <li><a href="https://wildsafariexpert.online/index.html#safari-zones">Corbett Visitor Zones Guide</a></li>
+          <li><a href="jeep-safari.html">Jeep Safari</a></li>
+          <li><a href="canter-safari.html">Canter Safari</a></li>
+          <li><a href="dhikala-night-stay.html">Dhikala Night Stay</a></li>
+          <li><a href="resort-stay.html">Resort Stay</a></li>
+          <li><a href="index.html#safari-zones">Corbett Safari Zones</a></li>
         </ul>
       </div>
 
       <div>
-        <h3>Company &amp; Policies</h3>
+        <h3>Visitor Information</h3>
         <ul>
-          <li><a href="https://wildsafariexpert.online/about-us.html">About Us (Business Identity)</a></li>
-          <li><a href="https://wildsafariexpert.online/about-jim-corbett.html">About Jim Corbett</a></li>
-          <li><a href="https://wildsafariexpert.online/terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="https://wildsafariexpert.online/terms-and-conditions.html#cancellation">Refund &amp; Cancellation Policy</a></li>
-          <li><a href="https://wildsafariexpert.online/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="https://wildsafariexpert.online/contact.html">Contact Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="about-jim-corbett.html">About Jim Corbett</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="terms-and-conditions.html#cancellation">Refund &amp; Cancellation Policy</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
-        <h3>Registered Office &amp; Contact</h3>
+        <h3>Contact Travel Desk</h3>
         <p>
-          <strong>Legal Entity:</strong> Rahino (Prop. Mohd Rehan)<br>
-          <strong>GSTIN:</strong> 05FIKPR6535Q1ZB<br>
           ☎ <a href="tel:+917457046323">+91-7457046323</a><br>
           ✉ <a href="mailto:info@wildsafariexpert.online">info@wildsafariexpert.online</a>
         </p>
-        <p>
-          <strong>Regd. Office Address:</strong> H.No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Kashipur, Udham Singh Nagar, Uttarakhand – 244713, India<br>
-          <strong>Dispatch &amp; Pickup Hub:</strong> Ramnagar &amp; Dhikuli Belt, Uttarakhand
-        </p>
+        <p><strong>Regd. Office:</strong> H.No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Udham Singh Nagar, Uttarakhand – 244713<br>
+          <strong>Safari Pickup Hub:</strong> Ramnagar &amp; Dhikuli Belt<br>
+          <strong>GSTIN:</strong> 05FIKPR6535Q1ZB (Rahino)</p>
       </div>
     </div>
 
     <div class="footer-disclosure">
-      <strong>Mandatory Disclaimer &amp; Non-Affiliation Notice:</strong> Wild Safari (<strong>wildsafariexpert.online</strong>), operated by <strong>Rahino (GSTIN: 05FIKPR6535Q1ZB)</strong>, is a registered private tour and travel operator. <strong>This is NOT an official website of Corbett Tiger Reserve or the Uttarakhand Forest Department.</strong> We do not operate as a government body or sell standalone official permits; we provide private travel planning, private vehicle/transfer hire, and resort accommodation packages subject to applicable rules and availability.
+      <strong>Important Disclosure:</strong> Wild Safari (wildsafariexpert.online) is a private tour operator. This is not an official website of Corbett Tiger Reserve. We provide travel planning, private vehicle/transfer coordination and accommodation enquiry assistance only, subject to applicable rules and availability.
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 Rahino (Operating as Wild Safari). All rights reserved. | GSTIN: 05FIKPR6535Q1ZB</span>
+      <span>© 2026 Wild Safari. All rights reserved.</span>
       <span>
-        <a href="https://wildsafariexpert.online/terms-and-conditions.html" style="color:#aebdb2;text-decoration:underline">Terms &amp; Conditions</a> • 
-        <a href="https://wildsafariexpert.online/terms-and-conditions.html#cancellation" style="color:#aebdb2;text-decoration:underline">Refund &amp; Cancellation Policy</a> • 
-        <a href="https://wildsafariexpert.online/privacy-policy.html" style="color:#aebdb2;text-decoration:underline">Privacy Policy</a>
+        <a href="terms-and-conditions.html" style="color:#aebdb2;text-decoration:underline">Terms &amp; Conditions</a> • 
+        <a href="terms-and-conditions.html#cancellation" style="color:#aebdb2;text-decoration:underline">Refund &amp; Cancellation Policy</a> • 
+        <a href="privacy-policy.html" style="color:#aebdb2;text-decoration:underline">Privacy Policy</a> • 
+        <a href="sitemap.xml" style="color:#aebdb2;text-decoration:underline">Sitemap</a> • 
+        Private travel assistance
       </span>
     </div>
   </footer>
 
-  <script>
-    (function () {
-      var menuBtn = document.getElementById('menuToggleBtn');
-      var mainNav = document.getElementById('mainNav');
-      if (menuBtn && mainNav) {
-        menuBtn.addEventListener('click', function () {
-          var isOpen = mainNav.classList.toggle('open');
-          menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-      }
-
-      var enquiryForm = document.getElementById('enquiryForm');
-      var formFeedback = document.getElementById('formFeedback');
-      var consentCheck = document.getElementById('consentCheck');
-      if (enquiryForm && formFeedback) {
-        enquiryForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          if (consentCheck && !consentCheck.checked) {
-            formFeedback.style.color = '#b45309';
-            formFeedback.textContent = 'Please accept the Privacy Policy and Terms & Conditions to proceed.';
-            return;
-          }
-          var formData = new FormData(enquiryForm);
-          var userName = formData.get('name') || 'Traveller';
-          formFeedback.style.color = '#1e4631';
-          formFeedback.textContent = 'Thank you, ' + userName + '! Your travel enquiry has been received by our desk at Rahino (Wild Safari). We will contact you shortly on your provided number.';
-          enquiryForm.reset();
-        });
-      }
-    })();
-  </script>
+  <!-- Unified JavaScript -->
+  <script src="assets/script.js"></script>
 </body>
 </html>
