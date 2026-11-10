@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us | Wild Safari | Local Travel Desk in Uttarakhand</title>
+  <title>Contact Us | Wild Safari (Operated by Rahino) | Local Travel Desk in Uttarakhand</title>
   <meta name="description" content="Connect with Wild Safari's local travel coordination desk in Uttarakhand. Enquire about 4x4 open Jeep drives, Dhikala Canter excursions, forest lodge planning &amp; resort stays near Ramnagar.">
   <meta name="keywords" content="Contact Wild Safari, Corbett Safari Phone Number, Jim Corbett Travel Agency Contact, Ramnagar Tour Operator Office, Corbett Travel Enquiry">
   <meta name="robots" content="index, follow">
@@ -199,6 +199,39 @@
       max-width: 100% !important;
     }
 
+    /* Consent Row inside Dark Green Enquiry Bar Form Grid */
+    #enquiry .form-grid .consent-row,
+    .form-grid .consent-row,
+    .consent-row {
+      grid-column: 1 / -1 !important;
+      margin-top: 0.35rem !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 0.55rem !important;
+      font-size: 0.8rem !important;
+      color: #d7e3da !important;
+      line-height: 1.45 !important;
+      width: 100% !important;
+    }
+    #enquiry .form-grid .consent-row input[type="checkbox"],
+    .form-grid .consent-row input[type="checkbox"],
+    .consent-row input[type="checkbox"] {
+      margin: 0.2rem 0 0 0 !important;
+      padding: 0 !important;
+      flex-shrink: 0 !important;
+      width: 16px !important;
+      min-width: 16px !important;
+      max-width: 16px !important;
+      height: 16px !important;
+      min-height: 16px !important;
+      accent-color: #d7a84b !important;
+      cursor: pointer !important;
+    }
+    .consent-row a {
+      color: #f0c76f !important;
+      text-decoration: underline !important;
+    }
+
     /* Quick Trip Preparation Tips Grid */
     .prep-tips-grid {
       display: grid;
@@ -358,17 +391,6 @@
         padding-bottom: 8px !important;
         gap: 6px !important;
       }
-      .site-header .brand {
-        font-size: clamp(0.98rem, 5vw, 1.2rem) !important;
-        line-height: 1.15 !important;
-        max-width: calc(100% - 46px) !important;
-      }
-      .site-header .brand small {
-        display: block !important;
-        font-size: clamp(0.54rem, 2.5vw, 0.65rem) !important;
-        letter-spacing: 0.03em !important;
-        white-space: normal !important;
-      }
       .site-header .menu-toggle {
         padding: 6px 10px !important;
         font-size: 1rem !important;
@@ -481,7 +503,7 @@
       <div class="contact-intro">
         <span class="eyebrow">Direct Local Travel Assistance • Uttarakhand</span>
         <h1>Get in Touch with Our Corbett Travel Desk</h1>
-        <p>Planning an open 4x4 Jeep drive, a Dhikala Canter excursion, or a family resort stay near Ramnagar? Share your preferred dates and group size below, and our local team will help coordinate your itinerary smoothly.</p>
+        <p>Planning a private 4x4 open Gypsy drive, local boarding transfer, or a family resort stay near Ramnagar? Connect directly with <strong>Wild Safari (operated by Rahino, GSTIN: 05FIKPR6535Q1ZB)</strong>—an independent private tour operator not affiliated with the Uttarakhand Forest Department.</p>
       </div>
 
       <div class="contact-grid">
@@ -514,7 +536,7 @@
           <span class="contact-card-note"><strong>GSTIN:</strong> 05FIKPR6535Q1ZB | <strong>Prop.:</strong> Mohd Rehan</span>
           <span class="contact-card-note"><strong>Pickup Hub:</strong> Ramnagar &amp; Dhikuli Belt, Uttarakhand</span>
           <div class="contact-Box-spacer">
-            <a class="contact-action" href="https://www.google.com/maps/search/?api=1&query=House+No.+33%2C+Mahua+Khera+Ganj%2C+Uttarakhand+244713" target="_blank" rel="noopener">View on Map</a>
+            <a class="contact-action" href="https://www.google.com/maps/search/?api=1&query=H.No.+1%2F83B%2C+Main+Road%2C+Near+Chand+Masjid%2C+Mahua+Khera+Ganj%2C+Uttarakhand+244713" target="_blank" rel="noopener">View on Map</a>
           </div>
         </div>
       </div>
@@ -534,13 +556,18 @@
               <input name="phone" placeholder="Mobile / WhatsApp number" aria-label="Mobile number" type="tel" required>
               <input name="email" placeholder="Email address" aria-label="Email address" type="email" required>
               <select name="interest" aria-label="Select your interest">
-                <option value="Corbett Wildlife Trip Planning" selected>Corbett Wildlife Trip Planning</option>
-                <option value="Jeep Safari Enquiry">Jeep Safari Enquiry</option>
-                <option value="Canter Safari Enquiry">Canter Safari Enquiry</option>
-                <option value="Dhikala Night Stay Consultation">Dhikala Night Stay Consultation</option>
-                <option value="Resort Stay Assistance">Resort Stay Assistance</option>
+                <option value="Corbett Private Trip & Resort Package" selected>Corbett Private Trip &amp; Resort Package</option>
+                <option value="Private 4x4 Gypsy & Local Transfer Enquiry">Private 4x4 Gypsy &amp; Local Transfer Enquiry</option>
+                <option value="Canter Boarding Transfer & Stay Package">Canter Boarding Transfer &amp; Stay Package</option>
+                <option value="Multi-Day Foothills Gypsy Transfer">Multi-Day Foothills Gypsy Transfer</option>
+                <option value="Private Resort & Cottage Booking">Private Resort &amp; Cottage Booking</option>
               </select>
               <button class="btn" type="submit">Send Enquiry</button>
+
+              <label class="consent-row" for="contactConsentCheck">
+                <input type="checkbox" id="contactConsentCheck" name="consent" required>
+                <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>, and consent to be contacted by <strong>Rahino (Wild Safari)</strong> regarding my travel enquiry.</span>
+              </label>
             </form>
 
             <div class="form-feedback" role="status" aria-live="polite"></div>
@@ -618,7 +645,7 @@
     </div>
 
     <div class="footer-disclosure">
-      <strong>Important Disclosure:</strong> Wild Safari (wildsafariexpert.online) is a private tour operator. This is not a the official website of Corbett Tiger Reserve. We provide travel planning, private vehicle/transfer coordination and accommodation enquiry assistance only, subject to applicable rules and availability.
+      <strong>Important Disclosure:</strong> Wild Safari (wildsafariexpert.online) is a private tour operator. This is not an official website of Corbett Tiger Reserve. We provide travel planning, private vehicle/transfer coordination and accommodation enquiry assistance only, subject to applicable rules and availability.
     </div>
 
     <div class="footer-bottom">
@@ -634,5 +661,21 @@
 
   <!-- Unified Global JavaScript -->
   <script src="assets/script.js"></script>
+  <script>
+  (() => {
+    document.querySelectorAll('#enquiry form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        const cb = form.querySelector('input[type="checkbox"][name="consent"]');
+        if (cb && !cb.checked) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          cb.setCustomValidity('Please tick the box to agree to the Privacy Policy and Terms & Conditions before submitting.');
+          cb.reportValidity();
+          cb.addEventListener('change', () => cb.setCustomValidity(''), { once: true });
+        }
+      }, true);
+    });
+  })();
+  </script>
 </body>
 </html>
