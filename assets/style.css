@@ -1902,7 +1902,7 @@ img {
 
 /* Moving legal / business-status disclaimer */
 .site-header::before {
-  content: "NOTICE: This is not an Official Website of Corbett Tiger Reserve. We are a private tour operator. Our package charges cover private Gypsy rental, driver and local trip coordination only.";
+  content: "NOTE: Official Disclosure: Wild Safari (wildsafariexpert.online) is a private travel & tour coordination agency operated by Rahino (GSTIN: 05FIKPR6535Q1ZB). We are NOT affiliated with the Uttarakhand Forest Department or the official Corbett Tiger Reserve portal.";
   display: block;
   width: 100%;
   min-height: 30px;
