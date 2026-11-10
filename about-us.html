@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | Wild Safari (Operated by Rahino) | Private Travel &amp; Tour Operator in Uttarakhand</title>
   <meta name="description" content="Learn about Wild Safari (operated by GST-registered proprietorship firm Rahino, GSTIN: 05FIKPR6535Q1ZB), a private local tour and travel assistance desk in Uttarakhand offering resort stays, private 4x4 vehicle hire, and Jim Corbett trip coordination.">
-  <meta name="keywords" content="About Wild Safari, Rahino Uttarakhand, Jim Corbett Private Tour Operator, Ramnagar Travel, Private Resort Stay Coordination, Uttarakhand Travel Agency">
+  <meta name="keywords" content="About Wild Safari, Rahino Uttarakhand, Jim Corbett Private Tour Operator, Ramnagar Travel Desk, Private Resort Stay Coordination, Uttarakhand Travel Agency">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wildsafariexpert.online/about-us.html">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://wildsafariexpert.online/sitemap.xml">
@@ -387,26 +387,37 @@
       line-height: 1.5;
     }
 
-    /* Consent Row inside Dark Green Enquiry Bar */
+    /* Consent Row inside Dark Green Enquiry Bar Form Grid */
+    #enquiry .form-grid .consent-row,
+    .form-grid .consent-row,
     .consent-row {
-      margin-top: 0.85rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.55rem;
-      font-size: 0.8rem;
-      color: #d7e3da;
-      line-height: 1.45;
+      grid-column: 1 / -1 !important;
+      margin-top: 0.35rem !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 0.55rem !important;
+      font-size: 0.8rem !important;
+      color: #d7e3da !important;
+      line-height: 1.45 !important;
+      width: 100% !important;
     }
+    #enquiry .form-grid .consent-row input[type="checkbox"],
+    .form-grid .consent-row input[type="checkbox"],
     .consent-row input[type="checkbox"] {
-      margin-top: 0.22rem;
-      flex-shrink: 0;
+      margin: 0.2rem 0 0 0 !important;
+      padding: 0 !important;
+      flex-shrink: 0 !important;
       width: 16px !important;
+      min-width: 16px !important;
+      max-width: 16px !important;
       height: 16px !important;
       min-height: 16px !important;
+      accent-color: #d7a84b !important;
+      cursor: pointer !important;
     }
     .consent-row a {
-      color: #f0c76f;
-      text-decoration: underline;
+      color: #f0c76f !important;
+      text-decoration: underline !important;
     }
 
     /* ====================================================================
@@ -765,12 +776,12 @@
             <option value="Resort & Family Cottage Booking">Resort &amp; Family Cottage Booking</option>
           </select>
           <button class="btn" type="submit">Send Enquiry</button>
-        </form>
 
-        <label class="consent-row" for="consentCheck">
-          <input type="checkbox" id="consentCheck" name="consent" required checked>
+          <label class="consent-row" for="consentCheck">
+          <input type="checkbox" id="consentCheck" name="consent" required>
           <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>, and consent to be contacted by <strong>Rahino (Wild Safari)</strong> regarding my travel enquiry.</span>
         </label>
+        </form>
 
         <div class="form-feedback" role="status" aria-live="polite"></div>
         <p class="form-note">Your enquiry is sent directly to our local travel team. See our <a href="privacy-policy.html" style="color:#f0c76f;text-decoration:underline">Privacy Policy</a>.</p>
@@ -845,5 +856,21 @@
 
   <!-- Unified JavaScript -->
   <script src="assets/script.js"></script>
+  <script>
+  (() => {
+    document.querySelectorAll('#enquiry form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        const cb = form.querySelector('input[type="checkbox"][name="consent"]');
+        if (cb && !cb.checked) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          cb.setCustomValidity('Please tick the box to agree to the Privacy Policy and Terms & Conditions before submitting.');
+          cb.reportValidity();
+          cb.addEventListener('change', () => cb.setCustomValidity(''), { once: true });
+        }
+      }, true);
+    });
+  })();
+  </script>
 </body>
 </html>
