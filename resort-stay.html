@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resorts in Jim Corbett, Ramnagar | Riverside &amp; Forest Stays | Wild Safari</title>
-  <meta name="description" content="Explore riverside, boutique, and forest-view resorts around Jim Corbett in Ramnagar, Dhikuli, Kyari &amp; Marchula. Swimming pools, family cottages, doorstep Gypsy pickup &amp; custom meal plans.">
+  <title>Resorts in Jim Corbett, Ramnagar | Riverside &amp; Forest Stays | Wild Safari (Rahino)</title>
+  <meta name="description" content="Explore riverside, boutique, and forest-view resorts around Jim Corbett in Ramnagar, Dhikuli, Kyari &amp; Marchula coordinated by Wild Safari (Operated by Rahino, GSTIN: 05FIKPR6535Q1ZB). Swimming pools, family cottages, doorstep Gypsy pickup &amp; custom meal plans.">
   <meta name="keywords" content="Resorts in Jim Corbett, Best Resorts in Ramnagar, Riverside Resorts in Jim Corbett, Luxury Resorts near Corbett National Park, Dhikuli Resorts Jim Corbett, Corbett Family Resort Packages, Jim Corbett Resort with Swimming Pool, Kyari Forest Resorts">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wildsafariexpert.online/resort-stay.html">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://wildsafariexpert.online/sitemap.xml">
   <meta name="theme-color" content="#173d2b">
 
   <!-- Favicon -->
@@ -21,9 +20,11 @@
   <meta property="og:description" content="Compare riverside and woodland resorts in Dhikuli, Kyari, and Ramnagar featuring swimming pools, multi-cuisine dining, and doorstep 4x4 Gypsy pickup.">
   <meta property="og:url" content="https://wildsafariexpert.online/resort-stay.html">
   <meta property="og:image" content="https://wildsafariexpert.online/assets/maya/maya-1.jpeg">
+  <meta property="og:locale" content="en_IN">
 
   <!-- Unified Global Stylesheet -->
-<link rel="stylesheet" href="assets/style.css?v=2">
+  <link rel="stylesheet" href="assets/style.css?v=2">
+
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
   {
@@ -31,17 +32,19 @@
     "@graph": [
       {
         "@type": "TravelAgency",
-        "name": "Wild Safari - Resort Stay & Safari Assistance",
+        "@id": "https://wildsafariexpert.online/#travelagency",
+        "name": "Wild Safari (Operated by Rahino)",
         "legalName": "Rahino (Proprietor: Mohd Rehan)",
         "taxID": "05FIKPR6535Q1ZB",
         "image": "https://wildsafariexpert.online/assets/maya/maya-1.jpeg",
-        "description": "Resort stay enquiry coordination and local transfer packages across riverside, family-friendly, and cottage properties around Jim Corbett, Ramnagar.",
+        "description": "Private resort stay coordination and local 4x4 Gypsy transfer packages across riverside, family-friendly, and cottage properties around Jim Corbett, Ramnagar.",
         "url": "https://wildsafariexpert.online/resort-stay.html",
         "telephone": "+91-7457046323",
         "email": "info@wildsafariexpert.online",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "House No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Distt. Udham Singh Nagar",
+          "addressLocality": "Kashipur",
           "addressRegion": "Uttarakhand",
           "postalCode": "244713",
           "addressCountry": "IN"
@@ -116,6 +119,20 @@
       word-wrap: break-word;
     }
 
+    /* Hero Non-Affiliation Pill inside Page Hero */
+    .hero-disclosure-pill {
+      margin-top: 1.15rem;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.48);
+      border: 1px solid rgba(240, 199, 111, 0.48);
+      color: #fef3c7;
+      padding: 0.55rem 0.95rem;
+      border-radius: 10px;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      max-width: 760px;
+    }
+
     /* Section & Heading Polish */
     .section {
       padding: 4.5rem 0;
@@ -146,13 +163,43 @@
     /* Enquiry Bar Polish */
     .form-wrap {
       border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(19, 42, 31, 0.08);
-      border: 1px solid var(--ws-border);
       min-width: 0;
     }
     .form-grid > * {
       min-width: 0 !important;
       max-width: 100% !important;
+    }
+    /* Consent Row inside Dark Green Enquiry Bar Form Grid */
+    #enquiry .form-grid .consent-row,
+    .form-grid .consent-row,
+    .consent-row {
+      grid-column: 1 / -1 !important;
+      margin-top: 0.35rem !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 0.55rem !important;
+      font-size: 0.8rem !important;
+      color: #d7e3da !important;
+      line-height: 1.45 !important;
+      width: 100% !important;
+    }
+    #enquiry .form-grid .consent-row input[type="checkbox"],
+    .form-grid .consent-row input[type="checkbox"],
+    .consent-row input[type="checkbox"] {
+      margin: 0.2rem 0 0 0 !important;
+      padding: 0 !important;
+      flex-shrink: 0 !important;
+      width: 16px !important;
+      min-width: 16px !important;
+      max-width: 16px !important;
+      height: 16px !important;
+      min-height: 16px !important;
+      accent-color: #d7a84b !important;
+      cursor: pointer !important;
+    }
+    .consent-row a {
+      color: #f0c76f !important;
+      text-decoration: underline !important;
     }
 
     /* Six-resort zig-zag layout */
@@ -696,17 +743,6 @@
         padding-bottom: 8px !important;
         gap: 6px !important;
       }
-      .site-header .brand {
-        font-size: clamp(0.98rem, 5vw, 1.2rem) !important;
-        line-height: 1.15 !important;
-        max-width: calc(100% - 46px) !important;
-      }
-      .site-header .brand small {
-        display: block !important;
-        font-size: clamp(0.54rem, 2.5vw, 0.65rem) !important;
-        letter-spacing: 0.03em !important;
-        white-space: normal !important;
-      }
       .site-header .menu-toggle {
         padding: 6px 10px !important;
         font-size: 1rem !important;
@@ -790,13 +826,13 @@
        ==================================================================== -->
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://wildsafariexpert.online">
         Wild Safari
         <small>EXPLORE IN NATURE’S LAP</small>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
       <nav class="nav-links" aria-label="Main Navigation">
-        <a href="index.html">Home</a>
+        <a href="https://wildsafariexpert.online">Home</a>
         <a href="jeep-safari.html">Jeep Safari</a>
         <a href="canter-safari.html">Canter Safari</a>
         <a href="dhikala-night-stay.html">Dhikala Night Stay</a>
@@ -809,54 +845,18 @@
   </header>
 
   <!-- ====================================================================
-       PAGE HERO BANNER
+       PAGE HERO BANNER (With Clear Above-the-Fold Disclosure Pill)
        ==================================================================== -->
   <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(8, 30, 18, 0.88), rgba(8, 30, 18, 0.5)), url('assets/maya/maya-1.jpeg');" aria-label="Resort Stay Header">
     <div class="container">
-      <span class="eyebrow">Riverside Retreats &amp; Woodland Cottages</span>
+      <span class="eyebrow">Riverside Retreats &amp; Woodland Cottages • Ramnagar &amp; Dhikuli</span>
       <h1>Resorts Around Jim Corbett</h1>
       <p>Unwind in scenic foothills comfort. Compare riverside properties in Dhikuli, tranquil garden cottages in Kyari, and family resorts near Ramnagar with convenient doorstep 4x4 Gypsy pickup.</p>
+      <div class="hero-disclosure-pill">
+        <strong>Official Disclosure:</strong> Wild Safari (<strong>wildsafariexpert.online</strong>) is a private tour operator (operated by <strong>Rahino, GSTIN: 05FIKPR6535Q1ZB</strong>) and is <strong>NOT</strong> affiliated with the Uttarakhand Forest Department. We coordinate private resort stays and doorstep 4x4 Gypsy transfers across partner properties in Dhikuli, Kyari, and Ramnagar; all resort names and visuals belong to their respective owners.
+      </div>
     </div>
   </section>
-
-  <!-- ====================================================================
-       QUICK ENQUIRY BAR
-       ==================================================================== -->
-  <div id="enquiry">
-    <section class="enquiry" aria-label="Resort Stay Planning Enquiry">
-      <div class="form-wrap">
-        <div class="form-title">
-          <div>
-            <h2>Plan Your Corbett Resort Stay &amp; Excursion Package</h2>
-            <div class="form-subtitle">Share your check-in dates, group size, and preferred stay style — our local Ramnagar travel desk will share suitable property options and tariffs.</div>
-          </div>
-        </div>
-
-        <form class="form-grid" id="resortEnquiryForm" data-enquiry-form novalidate>
-          <input name="name" placeholder="Your full name" aria-label="Your full name" autocomplete="name" required>
-          <input name="phone" placeholder="Mobile / WhatsApp number" aria-label="Mobile number" type="tel" autocomplete="tel" required>
-          <input name="email" placeholder="Email address" aria-label="Email address" type="email" autocomplete="email" required>
-          <select name="interest" aria-label="Select your interest" required>
-            <option value="Riverside Luxury Resort (Kosi River Belt)" selected>Riverside Luxury Resort (Kosi River Belt)</option>
-            <option value="Forest-View Cottage &amp; Eco-Lodge">Forest-View Cottage &amp; Eco-Lodge</option>
-            <option value="Family-Friendly Resort with Pool">Family-Friendly Resort with Pool</option>
-            <option value="Resort Stay + 4x4 Jeep Safari Combo">Resort Stay + 4x4 Jeep Safari Combo</option>
-            <option value="Corporate / Destination Wedding Enquiry">Corporate / Destination Wedding Enquiry</option>
-          </select>
-          <input type="hidden" name="selected_resort" id="selectedResortName" value="General Resort Enquiry">
-          <button class="btn" type="submit" id="resortSubmitBtn">Send Enquiry</button>
-        </form>
-
-        <p class="web3-resort-error" id="resortFormError" role="alert" aria-live="assertive" hidden></p>
-
-        <p class="form-note">
-          Your enquiry is sent directly to our local team (see our <a href="privacy-policy.html">Privacy Policy</a>). We assist with private resort enquiries and door-to-door excursion transfers based on seasonal availability.
-        </p>
-
-        <div class="form-feedback" role="status" aria-live="polite"></div>
-      </div>
-    </section>
-  </div>
 
   <!-- ====================================================================
        FEATURED RESORTS: RESPONSIVE ZIG-ZAG SLIDESHOW
@@ -865,8 +865,8 @@
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Curated Woodland &amp; River Stays</span>
-        <h2>Featured Resorts Around Jim Corbett</h2>
-        <p>Browse six welcoming properties around Ramnagar and Dhikuli, flip through their photo galleries, and send a direct enquiry for your travel dates.</p>
+        <h2>Featured Partner Resorts Around Jim Corbett</h2>
+        <p>Browse six welcoming properties around Ramnagar and Dhikuli, flip through their photo galleries, and send a direct enquiry to our local desk at <strong>Rahino</strong> for your travel dates.</p>
       </div>
       <div class="zigzag-resort-list">
 
@@ -1045,7 +1045,7 @@
         </article>
       </div>
       <p class="small" style="margin-top: 22px; text-align: center; color: var(--ws-text-muted);">
-        *Note: All resort names and property visuals belong to their respective owners. Wild Safari assists travellers as a local Tour coordinator; listed per-night tariffs are indicative starting estimates for double occupancy and vary by season, weekend dates, and chosen meal plan.
+        *Note: All resort names and property visuals belong to their respective owners. Wild Safari (operated by <strong>Rahino, GSTIN: 05FIKPR6535Q1ZB</strong>) assists travellers as a local tour coordinator; listed per-night tariffs are indicative starting estimates for double occupancy and vary by season, weekend dates, and chosen meal plan.
       </p>
     </div>
   </section>
@@ -1136,8 +1136,8 @@
       </div>
 
       <div class="disclosure" style="margin-top: 24px;">
-        <strong>Helpful Note on Excursion Guide Charges:</strong><br>
-        When pairing an open Jeep or Canter excursion with your resort stay, please note that <strong>the local nature guide fee (approx. ₹1,000 per drive slot) is separate from resort and vehicle charges</strong> and is paid directly by guests to the assigned guide at the entry gate.
+        <strong>Helpful Note on Resort Packages &amp; Excursion Transfers:</strong><br>
+        Wild Safari (operated by <strong>Rahino, GSTIN: 05FIKPR6535Q1ZB</strong>) coordinates private room stays, meal plans, and doorstep 4x4 Gypsy transfers with formal GST billing. When pairing an open Jeep or Canter excursion with your resort stay, please note that <strong>the local nature guide fee (approx. ₹1,000 per drive slot) is separate from resort and vehicle charges</strong> and is paid directly by guests to the assigned guide at the entry gate.
       </div>
     </div>
   </section>
@@ -1234,6 +1234,49 @@
     </div>
   </section>
 
+  <!-- ====================================================================
+       QUICK ENQUIRY BAR (At Bottom Above Footer, With Unchecked Required Consent Checkbox)
+       ==================================================================== -->
+  <div id="enquiry">
+    <section class="enquiry" aria-label="Resort Stay Planning Enquiry">
+      <div class="form-wrap">
+        <div class="form-title">
+          <div>
+            <h2>Plan Your Corbett Resort Stay &amp; Excursion Package</h2>
+            <div class="form-subtitle">Share your check-in dates, group size, and preferred stay style — our local travel desk at <strong>Rahino (Wild Safari)</strong> will share suitable property options and tariffs.</div>
+          </div>
+        </div>
+
+        <form class="form-grid" id="resortEnquiryForm" data-enquiry-form novalidate>
+          <input name="name" placeholder="Your full name" aria-label="Your full name" autocomplete="name" required>
+          <input name="phone" placeholder="Mobile / WhatsApp number" aria-label="Mobile number" type="tel" autocomplete="tel" required>
+          <input name="email" placeholder="Email address" aria-label="Email address" type="email" autocomplete="email" required>
+          <select name="interest" aria-label="Select your interest" required>
+            <option value="Riverside Luxury Resort (Kosi River Belt)" selected>Riverside Luxury Resort (Kosi River Belt)</option>
+            <option value="Forest-View Cottage &amp; Eco-Lodge">Forest-View Cottage &amp; Eco-Lodge</option>
+            <option value="Family-Friendly Resort with Pool">Family-Friendly Resort with Pool</option>
+            <option value="Resort Stay + Private 4x4 Gypsy Package">Resort Stay + Private 4x4 Gypsy Package</option>
+            <option value="Corporate / Destination Wedding Enquiry">Corporate / Destination Wedding Enquiry</option>
+          </select>
+          <input type="hidden" name="selected_resort" id="selectedResortName" value="General Resort Enquiry">
+          <button class="btn" type="submit" id="resortSubmitBtn">Send Enquiry</button>
+
+          <label class="consent-row" for="resortConsentCheck">
+            <input type="checkbox" id="resortConsentCheck" name="consent" required>
+            <span>I agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>, and consent to be contacted by <strong>Rahino (Wild Safari)</strong> regarding my travel enquiry.</span>
+          </label>
+        </form>
+
+        <p class="web3-resort-error" id="resortFormError" role="alert" aria-live="assertive" hidden></p>
+
+        <p class="form-note">
+          Your enquiry is sent directly to our local team (see our <a href="privacy-policy.html" style="color:#f0c76f;text-decoration:underline">Privacy Policy</a>). We assist with private resort enquiries and door-to-door excursion transfers based on seasonal availability.
+        </p>
+
+        <div class="form-feedback" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </div>
 
   <!-- Web3Forms successful submission popup -->
   <div class="web3-resort-modal" id="resortSuccessModal" hidden
@@ -1254,12 +1297,12 @@
   </div>
 
   <!-- ====================================================================
-       GLOBAL FOOTER (Identical on ALL Pages)
+       GLOBAL FOOTER (100% Identical to index.html, Address & Typo Fixed)
        ==================================================================== -->
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <a class="brand" style="color:white" href="index.html">
+        <a class="brand" style="color:white" href="https://wildsafariexpert.online">
           Wild Safari
           <small>EXPLORE IN NATURE’S LAP</small>
         </a>
@@ -1286,6 +1329,7 @@
           <li><a href="terms-and-conditions.html#cancellation">Refund &amp; Cancellation Policy</a></li>
           <li><a href="privacy-policy.html">Privacy Policy</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
 
@@ -1295,14 +1339,14 @@
           ☎ <a href="tel:+917457046323">+91-7457046323</a><br>
           ✉ <a href="mailto:info@wildsafariexpert.online">info@wildsafariexpert.online</a>
         </p>
-        <p><strong>Regd. Office:</strong> H.No. 1/83B, Main Road, Near Chand Masjid (H.No. 33), Mahua Khera Ganj, Udham Singh Nagar, Uttarakhand – 244713<br>
+        <p><strong>Regd. Office:</strong> H.No. 1/83B, Main Road, Near Chand Masjid, Mahua Khera Ganj, Udham Singh Nagar, Uttarakhand – 244713<br>
           <strong>Safari Pickup Hub:</strong> Ramnagar &amp; Dhikuli Belt<br>
           <strong>GSTIN:</strong> 05FIKPR6535Q1ZB (Rahino)</p>
       </div>
     </div>
 
     <div class="footer-disclosure">
-      <strong>Important Disclosure:</strong> Wild Safari (wildsafariexpert.online) is a private tour operator. This is not a the official website of Corbett Tiger Reserve. We provide travel planning, private vehicle/transfer coordination and accommodation enquiry assistance only, subject to applicable rules and availability.
+      <strong>Important Disclosure:</strong> Wild Safari (wildsafariexpert.online) is a private tour operator. This is not an official website of Corbett Tiger Reserve. We provide travel planning, private vehicle/transfer coordination and accommodation enquiry assistance only, subject to applicable rules and availability.
     </div>
 
     <div class="footer-bottom">
@@ -1311,6 +1355,7 @@
         <a href="terms-and-conditions.html" style="color:#aebdb2;text-decoration:underline">Terms &amp; Conditions</a> • 
         <a href="terms-and-conditions.html#cancellation" style="color:#aebdb2;text-decoration:underline">Refund &amp; Cancellation Policy</a> • 
         <a href="privacy-policy.html" style="color:#aebdb2;text-decoration:underline">Privacy Policy</a> • 
+        <a href="sitemap.xml" style="color:#aebdb2;text-decoration:underline">Sitemap</a> • 
         Private travel assistance
       </span>
     </div>
@@ -1380,6 +1425,20 @@
         }
         interest.value = custom.value;
       });
+    });
+
+    // Enforce consent checkbox validation before form submission
+    document.querySelectorAll('#enquiry form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        const cb = form.querySelector('input[type="checkbox"][name="consent"]');
+        if (cb && !cb.checked) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          cb.setCustomValidity('Please tick the box to agree to the Privacy Policy and Terms & Conditions before submitting.');
+          cb.reportValidity();
+          cb.addEventListener('change', () => cb.setCustomValidity(''), { once: true });
+        }
+      }, true);
     });
   </script>
 
