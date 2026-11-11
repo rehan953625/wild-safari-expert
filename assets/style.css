@@ -1900,25 +1900,9 @@ img {
   z-index: 1001 !important;
 }
 
-/* Moving legal / business-status disclaimer */
-.site-header::before {
-  content: "NOTE: Official Disclosure: Wild Safari (wildsafariexpert.online) is a private travel & tour coordination agency operated by Rahino (GSTIN: 05FIKPR6535Q1ZB). We are NOT affiliated with the Uttarakhand Forest Department or the official Corbett Tiger Reserve portal.";
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  padding: 6px 0;
-  overflow: hidden;
-  white-space: nowrap;
-  background: #fff4d9;
-  color: #493718;
-  border-bottom: 1px solid #e8d4a5;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: left;
-  text-indent: 100%;
-  animation: acs-disclaimer-marquee 28s linear infinite;
-}
+<div style="background-color: #fff3cd; color: #664d03; padding: 10px 15px; text-align: center; font-size: 13px; border-bottom: 1px solid #ffecb5; font-family: sans-serif;">
+  <strong>Important Disclosure:</strong> Wild Safari (A Travel Unit of <strong>Rahino</strong> | GSTIN: 05FIKPR6535Q1ZB) is an independent private tour operator. We are <strong>NOT</strong> affiliated with the Government of Uttarakhand or the official Corbett Tiger Reserve portal.
+</div>
 
 /* Smooth continuous leftward movement */
 @keyframes acs-disclaimer-marquee {
